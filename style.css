@@ -1,0 +1,63 @@
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.navbar-brand{
+	font-size: 50px;
+	margin-left: 20px;
+}
+.navbar{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: auto;
+	height: 70px;
+}
+.bg1{
+	width: 1536px;
+	height: 870px;
+	background-image: url(Desktop1.png);
+	z-index: 1;
+}
+.text-div{
+	width: 621px;
+	height: 166px;
+	position: relative;
+	left: 464px;
+	top: 266.22px;
+}
+.text-div h1{
+	color: white;
+	font-weight: bold;
+	font-size: 54px;
+}
+.text-div h2{
+	color: white;
+	font-weight: bold;
+	font-size: 41px;
+}
+.text-div p{
+	color: #CED4DA;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.text-div button{
+	width: 168.18px;
+	height: 43.1px;
+	border-radius: 15px;
+	position: relative;
+	bottom: 140px;
+	left: 180px;
+	border: none;
+	background-image: linear-gradient(to right , #E4C8E5 , #B984B1 , #721174);
+	color: #E9ECEF;
+	font-weight: semi-bold;
+	font-size: 20px;
+}
+.text-div img{
+	width: 348px;
+	height: 348px;
+	position: relative;
+	right: 350px;
+	bottom: 80px;
+}
