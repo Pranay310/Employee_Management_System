@@ -13,6 +13,13 @@ body{
 	padding: auto;
 	height: 70px;
 }
+.navbar-nav .nav-link {
+    color: #C05299;
+}
+.navbar .navbar-brand{
+	color: #C05299;
+}
+
 .bg1{
 	width: 1536px;
 	height: 870px;
@@ -63,7 +70,9 @@ body{
 }
                                            /*Home Page styling end here*/
 .hero{
-	display: flex;
+/*	display: flex;*/
+	width: 100vw;
+	height: 200vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -72,6 +81,15 @@ body{
 	height: 500px;
 	position: relative;
 	top: 100px;
+	left: 25%;
 	background-color: grey;
 	padding: 15px;
+}
+.tables{
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	top: 90%;
+	left: 30%;
+	padding: 20px;
 }
