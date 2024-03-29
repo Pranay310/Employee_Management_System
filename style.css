@@ -9,21 +9,78 @@ body{
 .navbar{
 	text-decoration: none;
 	color: white;
+	background-image: linear-gradient(to right , #8B79D9 ,#805EBF, #6F46A6, #511F73 );
 	font-size: 20px;
 	padding: auto;
-	height: 70px;
+	height: 50px;
 }
 .navbar-nav .nav-link {
-    color: #C05299;
+    color: #CCDCFF;
 }
 .navbar .navbar-brand{
-	color: #C05299;
+	color: #CCDCFF;
 }
 
 .bg1{
 	width: 1536px;
 	height: 870px;
-	background-image: url(Desktop1.png);
+	background-color: #212529;
+	z-index: 1;
+}
+.bgImg{
+	position: absolute;
+	left: 158px;
+	top: 110px;
+	z-index: 1;
+}
+.largeShape1{
+	position: absolute;
+	left: 927px;
+	top: 240px;
+	z-index: 1;
+}
+.smallShape1{
+	position: absolute;
+	left: 1099px;
+	top: 240px;
+	z-index: 2;
+}
+.aniGif{
+	width: 348px;
+	height: 348px;
+	position: absolute;
+	top: 380px;
+	left: 216px;
+	z-index: 2;
+}
+.largeShape2{
+	position: absolute;
+	left: 275px;
+	top: 110px;
+	z-index: 1;
+}
+.smallShape2{
+	position: absolute;
+	left: 529px;
+	top: 110px;
+	z-index: 1;
+}
+.ellipse5{
+	position: absolute;
+	left: 96px;
+	top: 570px;
+	z-index: 1;
+}
+.ellipse3{
+	position: absolute;
+	left: 1041px;
+	top: 200px;
+	z-index: 1;
+}
+.ellipse4{
+	position: absolute;
+	left: 1114px;
+	top: 165px;
 	z-index: 1;
 }
 .text-div{
@@ -31,7 +88,8 @@ body{
 	height: 166px;
 	position: relative;
 	left: 464px;
-	top: 266.22px;
+	top: 210px;
+	z-index: 3;
 }
 .text-div h1{
 	color: white;
@@ -49,25 +107,17 @@ body{
 	font-size: 18px;
 }
 .text-div button{
+	margin-top: 25px;
 	width: 168.18px;
 	height: 43.1px;
 	border-radius: 15px;
-	position: relative;
-	bottom: 140px;
-	left: 180px;
 	border: none;
 	background-image: linear-gradient(to right , #E4C8E5 , #B984B1 , #721174);
 	color: #E9ECEF;
 	font-weight: semi-bold;
 	font-size: 20px;
 }
-.text-div img{
-	width: 348px;
-	height: 348px;
-	position: relative;
-	right: 350px;
-	bottom: 80px;
-}
+
                                            /*Home Page styling end here*/
 .hero{
 /*	display: flex;*/
@@ -89,7 +139,7 @@ body{
 	width: 500px;
 	height: 50px;
 	position: absolute;
-	top: 90%;
+	top: 70%;
 	left: 30%;
 	padding: 20px;
 }

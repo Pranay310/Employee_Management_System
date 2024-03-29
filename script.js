@@ -1,10 +1,13 @@
 
-let selectedRow = null ;
+let selectedRow = null;
 function openRegister(){
 	open("register.html")
 }
 function fetchData(){
 	let obj = {}
+	if(selectedRow == null)
+	{
+		
 	obj.name = document.getElementById('name').value;
 	obj.empId = document.getElementById('empId').value;
 	obj.address =  document.getElementById('address').value;
@@ -12,6 +15,10 @@ function fetchData(){
 	
 	displayData(obj);
 	clearFields(obj);
+	}else{
+		update(); 
+		clearFields(obj);
+		}
 }
 function displayData(ele){
 
@@ -27,8 +34,8 @@ function displayData(ele){
 	newCell2.innerHTML = ele.empId;
 	newCell3.innerHTML = ele.address;
 	newCell4.innerHTML = ele.designation;
-	newCell5.innerHTML = `<button type="button" onclick="editData()">Edit</button>
-							<button type="button" onclick="deleteData()">Delete</button>`;
+	newCell5.innerHTML = `<button type="button" id="edit" onclick="editData(this)">Edit</button>
+							<button type="button" id="delete" onclick="deleteData(this)">Delete</button>`;
 }
 function clearFields(obj){
 	document.getElementById('name').value = "" ;
@@ -36,6 +43,19 @@ function clearFields(obj){
 	document.getElementById('address').value = "" ;
 	document.getElementById('designation').value = "" ;
 }
-function editData(){
-
+function editData(ele){
+	selectedRow = ele.parentElement.parentElement
+	document.getElementById('name').value = selectedRow.cells[0].innerHTML; 
+	document.getElementById('empId').value = selectedRow.cells[1].innerHTML; 
+	document.getElementById('address').value = selectedRow.cells[2].innerHTML; 
+	document.getElementById('designation').value = selectedRow.cells[3].innerHTML; 
+	
+}
+function update(){
+	// console.log("helloo")
+	selectedRow.cells[0].innerHTML = document.getElementById('name').value;
+	selectedRow.cells[1].innerHTML = document.getElementById('empId').value;
+	selectedRow.cells[2].innerHTML = document.getElementById('address').value;
+	selectedRow.cells[3].innerHTML = document.getElementById('designation').value;
+	selectedRow = null;
 }
