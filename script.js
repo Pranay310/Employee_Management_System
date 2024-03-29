@@ -59,3 +59,16 @@ function update(){
 	selectedRow.cells[3].innerHTML = document.getElementById('designation').value;
 	selectedRow = null;
 }
+document.addEventListener("mousemove",parallax);
+function parallax(e){
+	document.querySelectorAll(".object").forEach((move)=>{
+
+		let moving_value = move.getAttribute("data-value");
+		let x = (e.clientX * moving_value) / 250;
+		let y = (e.clientY * moving_value) / 250;
+
+		// console.log(x);
+
+		move.style.transform = "translateX("+ x +"px) translateY("+ y +"px)"
+	})
+}
