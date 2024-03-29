@@ -1,8 +1,7 @@
-
-let selectedRow = null;
 function openRegister(){
 	open("register.html")
 }
+let selectedRow = null;
 function fetchData(){
 	let obj = {}
 	if(selectedRow == null)
@@ -60,12 +59,13 @@ function update(){
 	selectedRow = null;
 }
 document.addEventListener("mousemove",parallax);
-function parallax(e){
+function parallax(event){
+
 	document.querySelectorAll(".object").forEach((move)=>{
 
 		let moving_value = move.getAttribute("data-value");
-		let x = (e.clientX * moving_value) / 250;
-		let y = (e.clientY * moving_value) / 250;
+		let x = (event.clientX * moving_value) / 250;
+		let y = (event.clientY * moving_value) / 250;
 
 		// console.log(x);
 
