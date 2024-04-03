@@ -3,6 +3,7 @@ function openRegister(){
 }
 let selectedRow = null;
 function fetchData(){
+
 	let obj = {}
 	if(selectedRow == null)
 	{
